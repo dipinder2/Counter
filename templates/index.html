@@ -10,21 +10,13 @@
     <title>Counter</title>
 </head>
 <body >
-    <form action="" method="get">
+
         <h1>Counter</h1>
         <h5 class="counter">{{counter}} times</h5>
         <div>
-            <button class="btn btn-success" id="addTwoVisits"><a onclick='addTwos({{counter}})' href="#" style="text-decoration: none; color:white">Add two Visits!</a></button>
-            <button  class="btn btn-danger" id="reset" ><a href="/destroy_session" style="text-decoration: none; color:white">Reset</a></button>
+            <a href="/twice-refresh"  class="btn btn-success">Add 2 </a>
+            <a href="/destroy_session" class="btn btn-danger">Reset</a>
         </div>
-    </form>
-    <script>
-        function addTwos(counter){
-            var x = document.querySelector(".counter").innerHTML;
-            var c = x.split(" ");
-            var ans = parseInt(c[0])+2;
-            document.querySelector(".counter").innerHTML = ans + " times";
-        }
-    </script>
+
 </body>
 </html>
